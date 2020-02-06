@@ -6,29 +6,28 @@
 //  Copyright © 2020 Elco Garcia. All rights reserved.
 //
 
-import XCTest
+@testable import Selfiegram
+import UIKit
 
-class SelfieStoreTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+// a helper function function tp create images with text being used as the image content
+func createImage(text: String)->UIImage
+{
+    //start a drawing canvas
+    UIGraphicsBeginImageContext(CGSize(width: 100, height: 100))
+    
+    //close the canvas after we return from this function
+    defer {
+        UIGraphicsEndImageContext()
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
+    //create label
+    let label = UILabel
+        (frame: CGRect(x: 0,y: 0, width: 100,height: 100))
+    label.font = UIFont.systemFontSize(ofSize: 50)
+    label.text = text
+    //Draw the label in the current drawing context
+    label.drawHierarchy(in: label.frame, afterScreenUpdates: true)
+    //return the image
+    
+    return UIGraphicsGetImageFromCurrentImageContext()!
 }
+
