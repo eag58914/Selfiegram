@@ -16,6 +16,8 @@
 		56D608CF23EB53C400ADD885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D608CD23EB53C400ADD885 /* LaunchScreen.storyboard */; };
 		56D608DA23EB53C400ADD885 /* SelfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D608D923EB53C400ADD885 /* SelfiegramTests.swift */; };
 		56D608E523EB53C400ADD885 /* SelfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D608E423EB53C400ADD885 /* SelfiegramUITests.swift */; };
+		56D608F523EB58CB00ADD885 /* SelfieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D608F423EB58CB00ADD885 /* SelfieStore.swift */; };
+		56D608F723EC837000ADD885 /* SelfieStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D608F623EC836F00ADD885 /* SelfieStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		56D608E023EB53C400ADD885 /* SelfiegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfiegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D608E423EB53C400ADD885 /* SelfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiegramUITests.swift; sourceTree = "<group>"; };
 		56D608E623EB53C400ADD885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D608F423EB58CB00ADD885 /* SelfieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieStore.swift; sourceTree = "<group>"; };
+		56D608F623EC836F00ADD885 /* SelfieStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		56D608B423EB53C300ADD885 = {
 			isa = PBXGroup;
 			children = (
+				56D608F423EB58CB00ADD885 /* SelfieStore.swift */,
+				56D608F623EC836F00ADD885 /* SelfieStoreTests.swift */,
 				56D608BF23EB53C300ADD885 /* Selfiegram */,
 				56D608D823EB53C400ADD885 /* SelfiegramTests */,
 				56D608E323EB53C400ADD885 /* SelfiegramUITests */,
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56D608C123EB53C300ADD885 /* AppDelegate.swift in Sources */,
+				56D608F523EB58CB00ADD885 /* SelfieStore.swift in Sources */,
 				56D608C323EB53C300ADD885 /* SceneDelegate.swift in Sources */,
 				56D608C523EB53C300ADD885 /* MasterViewController.swift in Sources */,
 				56D608C723EB53C300ADD885 /* DetailViewController.swift in Sources */,
@@ -274,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56D608DA23EB53C400ADD885 /* SelfiegramTests.swift in Sources */,
+				56D608F723EC837000ADD885 /* SelfieStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
